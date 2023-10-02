@@ -1,49 +1,53 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* GENERAL STYLE */
-body{
-font-family: 'PT Sans', sans-serif;
+body {
+    font-family: 'PT Sans', sans-serif;
 }
 
 h2,
-h3,{
-    padding: 2rem;
+h3,
+{
+padding: 2rem;
 }
 
 h4 {
     padding: 1.5rem;
 }
-.container{
+
+.container {
     width: 90%;
     margin: 0 auto;
     max-width: 1000px;
     display: flex;
 }
 
-
 /* HEADER SECTION */
-.header-section{
+.header-section {
     background-color: dodgerblue;
     height: 4rem;
-    display: flex;   
+    display: flex;
 }
-.container-header{
+
+.container-header {
     justify-content: space-between;
     align-items: center;
     color: white;
 }
-.header-menu{
+
+.header-menu {
     list-style-type: none;
     display: flex;
     gap: 1rem;
     display: none;
 }
-.header-btn{
+
+.header-btn {
     background-color: white;
     color: black;
     border-radius: 10rem;
@@ -52,12 +56,12 @@ h4 {
 }
 
 /* TABLET FIRST */
-@media screen and (min-width: 768px){
-    .header-menu{
+@media screen and (min-width: 768px) {
+    .header-menu {
         display: none;
-        
+
     }
-    
+
 }
 
 /* DESKTOP FIRST 
@@ -69,80 +73,141 @@ h4 {
 
 
 /* APP SECTION */
-.app-section{
-    width: 100%;
-}
-.app-container{
+.app-container {
     padding-top: 2rem;
     padding-bottom: 3rem;
-    width: 100%;
+    width: 90%;
 }
 
-.col-app{
+.col-app {
     border: 1px solid black;
     padding: .5rem;
     min-height: 20rem;
-    
+
 }
 
 /* TABLET FIRST */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
-    .row{
+    .row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .col-app:first-child{
+
+    .col-app:first-child {
         width: 65%;
         margin-bottom: 3rem;
     }
-    .col-app{
+
+    .col-app {
         width: 30%;
         margin-bottom: 3rem;
     }
 }
 
 /* STRATEGIC SECTION*/
-.col-str{
+.strategic-container {
+    width: 90%;
+}
+
+.col-str {
     border: 1px solid black;
     min-height: 20rem;
     padding: .5rem;
 }
-.strategic-container{
-    width: 100%;
+
+/* TABLET FIRST */
+@media screen and (min-width: 768px) {
+    .row {
+        display: flex;
+    }
+
+    .col-str {
+        width: calc(50% - 1rem);
+        flex-wrap: wrap;
+    }
+}
+
+/* TESTIMONIALS SECTION */
+.col-test {
+    border: 1px solid black;
+    min-height: 10rem;
+    padding: .5rem;
+}
+
+.testimonials-container {
+    width: 90%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* BENEFITS SECTION */
+
+.col-ben {
+    border: 1px solid black;
+    min-height: 10rem;
+    padding: .5rem;
+}
+
+.benefits-container {
+    width: 90%;
+    padding-bottom: 2rem;
+    display: flex;
 }
 
 /* TABLET FIRST */
-@media screen and (min-width: 768px){
-    .row{
+@media screen and (min-width: 768px) {
+    .benefits-container .row {
         display: flex;
-    }
-    .col-str{
-        width: calc(50% - 1rem);
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
+    .col-ben {
+        width: 30%;
+        padding-bottom: 2rem;
     }
 }
 
+/* ABOUT SECTION */
+.about-container {
+    width: 90%;
 
+}
 
+.col-about {
+    border: 1px solid black;
+    min-height: 20rem;
+    display: flex;
+}
 
+@media screen and (min-width: 768px) {
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.col-about:first-child {
+    width: 65%;
+    margin-bottom: 3rem;
+}
 
+.col-about {
+    width: 30%;
+    margin-bottom: 3rem;
+ }
 
-
-
-        
-    
-    
-
-
-    
-
-
-
-
-
-
-
+}
+/*FOOTER SECTION*/
+.col-footer{
+    width: 100%;
+    border: 1px solid black;
+    min-height: 10rem;
+}
+.col2-footer{
+    width: 100%;
+    border: 1px solid black;
+    min-height: 10rem;
+}
