@@ -6,6 +6,7 @@
 }
 
 /* GENERAL STYLE */
+
 img{
     max-width: 100%;
 }
@@ -34,14 +35,20 @@ h4 {
     border-radius: 10rem;
     padding: .5rem;
     color: white;
-    border: 1px solid rgb(206, 153, 206);
-    background-color: rgb(206, 153, 206);
+    border: 1px solid #9593E6; 
+    background-color: #9593E6;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
+    display: flex;
+}
+.small-container{
+    width: 70%;
+    margin: 0 auto;
+    max-width: 700px;
     display: flex;
 }
 
@@ -94,15 +101,25 @@ h4 {
 .app-container {
     padding-top: 2rem;
     padding-bottom: 3rem;
-    width: 90%;
 }
 
 .col-app {
-    border: 1px solid black;
     padding: .5rem;
     min-height: 20rem;
     display: flex;
+    background-color: rgb(145, 204, 224);
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
 
+.card i{
+    color: dodgerblue;
+    z-index: 999;
+}
+.card-img{
+    width: 300px;
+    display: flex;
 }
 
 
@@ -127,14 +144,30 @@ h4 {
 }
 
 /* STRATEGIC SECTION*/
-.strategic-container {
-    width: 90%;
+.strategic-section{
+    background-color: #9593E6;
+    padding: 4rem 0;
 }
 
 .col-str {
-    border: 1px solid black;
-    min-height: 20rem;
-    padding: .5rem;
+    padding: 2rem;
+    color: white;
+}
+.card{
+    z-index: 10;
+}
+.col-str-2{
+    background-color: white;
+    border-radius: 1.5rem;
+    color: black;
+    position: relative;
+}
+.img-planning {
+    width: 800px;
+}
+.arrow-down{
+    z-index: 999;
+    padding: 2rem;
 }
 
 /* TABLET FIRST */
@@ -152,14 +185,24 @@ h4 {
 /* TESTIMONIALS SECTION */
 .col-test {
     border: 1px solid black;
-    min-height: 10rem;
     padding: .5rem;
+    background-color:#9593E6 ;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .testimonials-container {
-    width: 90%;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+.foto-testimonial{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: .5rem;
 }
 
 /* BENEFITS SECTION */
@@ -171,7 +214,6 @@ h4 {
 }
 
 .benefits-container {
-    width: 90%;
     padding-bottom: 2rem;
     display: flex;
 }
@@ -191,11 +233,6 @@ h4 {
 }
 
 /* ABOUT SECTION */
-.about-container {
-    width: 90%;
-
-}
-
 .col-about {
     border: 1px solid black;
     min-height: 20rem;
